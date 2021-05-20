@@ -1,39 +1,70 @@
 .headerContainer {
-	background: var(--white);
-	height: 6.5rem;
-	display: flex;
-	align-items: center;
-	padding: 2rem 4rem;
-	border-bottom: 1px solid var(--gray-100);
+  background: var(--primary-500);
+  color: var(--gray-50);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
 
-	p {
-    margin-left: 2rem;
-    padding: 0.25rem 0 0.25rem 2rem;
-    border-left: 1px solid var(--gray-100);
-	}
+  img {
+    width: 8rem;
+  }
 
-  span {
+  a {
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--gray-50);
+    transition: all 0.8s;
+    border-bottom: 3px solid var(--primary-500);
+  }
+
+  a:hover {
+    background: var(--primary-200);
+    border-bottom: 3px solid var(--secondary-800);
+  }
+
+  div {
+    display: flex;
     margin-left: auto;
-		text-transform: capitalize;
+    text-transform: capitalize;
+    color: var(--gray-500);
+    text-align: center;
+    align-items: center;
+
+    &:first-child {
+      background: var(--white);
+      border: 1px solid var(--gray-200);
+      border-radius: 50%;
+      padding: 0.5rem 0.5rem;
+      float: left;
+    }
+
+    &:last-child {
+      padding: 0.25rem;
+      float: right;
+    }
   }
 }
 
 @media (max-width: 720px) {
-
   .headerContainer {
-	  height: 5rem;
-	  padding: 1rem 2rem;
+    height: 5rem;
+    padding: 1rem 2rem;
 
-	  p {
-	    font-size: 1rem;
-	    margin-left: 1rem;
-	    padding: 0rem 0 0.25rem 2rem;
-	    border-left: 1px solid var(--gray-100);
-	  }
+    p {
+      font-size: 1rem;
+      margin-left: 1rem;
+      padding: 0rem 0 0.25rem 2rem;
+      border-left: 1px solid var(--gray-100);
+    }
 
-	  span {
-	    margin-left: auto;
-	    font-size: 0.7rem;
-	  }
-	}
+    span {
+      margin-left: auto;
+      font-size: 0.7rem;
+    }
+  }
 }
