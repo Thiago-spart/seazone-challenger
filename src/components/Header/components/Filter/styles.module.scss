@@ -1,0 +1,74 @@
+.filterContainer {
+  display: flex;
+  border-bottom: 1px solid var(--gray-200);
+  padding: 1rem 6rem;
+  font-size: 0.9rem;
+  color: var(--primary-800);
+
+  .formGroup {
+    padding: 0.5rem;
+  
+    label {
+      display: flex;
+      float: top;
+      font-weight: bold;
+      margin-left: 0.2rem;
+    }
+
+    select,
+    input {
+      appearance: none;
+      margin-top: 1.1rem;
+      border-radius: 0.7rem;
+      padding: 0.7rem 1rem;
+      font-size: 1.05rem;
+      cursor: pointer;
+      line-height: 1.1;
+      border: 2px solid var(--gray-200);
+      color: var(--gray-800);
+    }
+
+    .formLocation {
+      width: 14rem;
+    }
+
+    .formPrice,
+    .formInput {
+      width: 9rem;
+    }
+
+    .searchButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.4rem;
+      background: linear-gradient(#fb5448, #e23537);
+      color: var(--white);
+      border: 2px solid #fb5448;
+      border-radius: 0.7rem;
+      font-weight: 600;
+      font-size: 1.15rem;
+      padding: 0.6rem 1rem;
+      width: 7rem;
+      transition: all 0.8s;
+    }
+
+    .searchButton:hover {
+      background: linear-gradient(#e23537, #fb5448);
+      border: 2px solid #e23537;
+    }
+
+    .moreFilters {
+      font-weight: 600;
+      color: #e23537;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      font-size: 1.15rem;
+    }
+
+    &:nth-last-child(-n+2) {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
