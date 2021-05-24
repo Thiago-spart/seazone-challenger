@@ -5,7 +5,7 @@
       "description": {
         "room": 2,
         "bedroom": 3,
-        "bathroom": 2,
+        "bathroom": 2
       },
       "status": true,
       "maxHosts": 6,
@@ -29,7 +29,7 @@
         "ageRestrictions": false,
         "allowSmokingRoom": false,
         "pets": false,
-        "event": true,
+        "event": true
       },
       "amenities": {
         "parking": false,
@@ -39,59 +39,16 @@
         "internet": true,
         "wifi": true,
         "airConditioner": false,
-        "tv": true,
+        "tv": true
       },
-      "img": "casa01.jpg",
+      "img": "casa01.jpg"
     },
     {
-      "name": "JBM205 Gourmet Top vista mar resort",
-      "description": {
-        "room": 4,
-        "bedroom": 3,
-        "bathroom": 3,
-      },
-      "status": true,
-      "maxHosts": 12,
-      "minHosts": 1,
-      "cleaningTax": 200,
-      "guarantee": 800,
-      "daily": 1000,
-      "address": {
-        "city": "Florianópolis",
-        "state": "SC",
-        "street": "Jurerê internacional",
-        "district": "AV. Búzios",
-        "number": "1420",
-        "cep": "89650-150",
-        "geolocalization": "https://www.google.com.br/maps"
-      },
-      "rules": {
-        "child": true,
-        "baby": true,
-        "crib": false,
-        "ageRestrictions": false,
-        "allowSmokingRoom": false,
-        "pets": true,
-        "event": true,
-      },
-      "amenities": {
-        "parking": true,
-        "elevator": false,
-        "doorman": false,
-        "privatePool": true,
-        "internet": true,
-        "wifi": true,
-        "airConditioner": true,
-        "tv": true,
-      },
-      "img": "casa02.jpg",
-    },
-    {
-      "name": "JBM202 Suite Top vista mar resort",
+      "name": "JBM242 Suite Top vista mar resort",
       "description": {
         "room": 2,
         "bedroom": 3,
-        "bathroom": 2,
+        "bathroom": 2
       },
       "status": true,
       "maxHosts": 6,
@@ -115,7 +72,7 @@
         "ageRestrictions": false,
         "allowSmokingRoom": false,
         "pets": false,
-        "event": true,
+        "event": true
       },
       "amenities": {
         "parking": false,
@@ -125,16 +82,16 @@
         "internet": true,
         "wifi": true,
         "airConditioner": false,
-        "tv": true,
+        "tv": true
       },
-      "img": "casa03.jpg",
+      "img": "casa02.jpg"
     },
     {
-      "name": "JBM202 Suite Top vista mar resort",
+      "name": "JBM222 Suite Top vista mar resort",
       "description": {
         "room": 2,
         "bedroom": 3,
-        "bathroom": 2,
+        "bathroom": 2
       },
       "status": true,
       "maxHosts": 6,
@@ -158,7 +115,7 @@
         "ageRestrictions": false,
         "allowSmokingRoom": false,
         "pets": false,
-        "event": true,
+        "event": true
       },
       "amenities": {
         "parking": false,
@@ -168,16 +125,16 @@
         "internet": true,
         "wifi": true,
         "airConditioner": false,
-        "tv": true,
+        "tv": true
       },
-      "img": "casa04.jpg",
+      "img": "casa03.jpg"
     },
     {
-      "name": "JBM202 Suite Top vista mar resort",
+      "name": "JBM74 Suite Top vista mar resort",
       "description": {
         "room": 2,
         "bedroom": 3,
-        "bathroom": 2,
+        "bathroom": 2
       },
       "status": true,
       "maxHosts": 6,
@@ -201,7 +158,7 @@
         "ageRestrictions": false,
         "allowSmokingRoom": false,
         "pets": false,
-        "event": true,
+        "event": true
       },
       "amenities": {
         "parking": false,
@@ -211,16 +168,16 @@
         "internet": true,
         "wifi": true,
         "airConditioner": false,
-        "tv": true,
+        "tv": true
       },
-      "img": "casa05.jpg",
+      "img": "casa04.jpg"
     },
     {
-      "name": "JBM202 Suite Top vista mar resort",
+      "name": "JBM55 Suite Top vista mar resort",
       "description": {
         "room": 2,
         "bedroom": 3,
-        "bathroom": 2,
+        "bathroom": 2
       },
       "status": true,
       "maxHosts": 6,
@@ -244,7 +201,7 @@
         "ageRestrictions": false,
         "allowSmokingRoom": false,
         "pets": false,
-        "event": true,
+        "event": true
       },
       "amenities": {
         "parking": false,
@@ -254,9 +211,52 @@
         "internet": true,
         "wifi": true,
         "airConditioner": false,
-        "tv": true,
+        "tv": true
       },
-      "img": "casa06.jpg",
+      "img": "casa05.jpg"
     },
+    {
+      "name": "JBM277 Suite Top vista mar resort",
+      "description": {
+        "room": 2,
+        "bedroom": 3,
+        "bathroom": 2
+      },
+      "status": true,
+      "maxHosts": 6,
+      "minHosts": 1,
+      "cleaningTax": 50,
+      "guarantee": 600,
+      "daily": 700,
+      "address": {
+        "city": "Florianópolis",
+        "state": "SC",
+        "street": "Jurerê internacional",
+        "district": "AV. Búzios",
+        "number": "1800",
+        "cep": "89650-100",
+        "geolocalization": "https://www.google.com.br/maps"
+      },
+      "rules": {
+        "child": true,
+        "baby": true,
+        "crib": false,
+        "ageRestrictions": false,
+        "allowSmokingRoom": false,
+        "pets": false,
+        "event": true
+      },
+      "amenities": {
+        "parking": false,
+        "elevator": true,
+        "doorman": true,
+        "privatePool": false,
+        "internet": true,
+        "wifi": true,
+        "airConditioner": false,
+        "tv": true
+      },
+      "img": "casa06.jpg"
+    }
   ]
 }
