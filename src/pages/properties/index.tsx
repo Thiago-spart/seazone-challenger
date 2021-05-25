@@ -2,12 +2,11 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
 
-import { api } from "../services/api";
-import { convertDurationToTimeString } from "../utils/convertDurationToTimeString";
+import { api } from "../../services/api";
 import { TiArrowSortedDown, TiHome, TiMap } from "react-icons/ti";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
-import styles from "../pages/home.module.scss";
+import styles from "./home.module.scss";
 
 type Property = {
   id: number;
