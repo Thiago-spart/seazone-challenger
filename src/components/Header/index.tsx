@@ -1,6 +1,7 @@
 import { FaUserAlt } from "react-icons/fa";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Filter } from "./components/Filter";
+import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
@@ -9,22 +10,21 @@ export function Header() {
     <header>
       <div className={styles.headerContainer}>
         <img src="/logo-header.png" alt="seazone logo" />
-
-        <a href="#" type="button">
-          Calendário
-        </a>
-        <a href="#" type="button">
-          Clientes
-        </a>
-        <a href="#" type="button">
-          Orçamento
-        </a>
-        <a href="#" type="button">
-          Propriedades
-        </a>
-        <a href="#" type="button">
-          Controle
-        </a>
+        <Link href={"/calendar/"}>
+          <a type="button">Calendário</a>
+        </Link>
+        <Link href={"/customers/"}>
+          <a type="button">Clientes</a>
+        </Link>
+        <Link href={"/budget/"}>
+          <a type="button">Orçamento</a>
+        </Link>
+        <Link href={"/properties/"}>
+          <a type="button">Propriedades</a>
+        </Link>
+        <Link href={"/control/"}>
+          <a type="button">Controle</a>
+        </Link>
 
         <div>
           <div>
