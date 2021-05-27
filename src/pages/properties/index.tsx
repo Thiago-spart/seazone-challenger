@@ -9,7 +9,7 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import styles from "./home.module.scss";
 
 type Property = {
-  id: number;
+  id: string;
   name: string;
   room: number;
   street: string;
@@ -51,7 +51,7 @@ export default function Home({ properties }: HomeProps) {
             <div key={property.id} className={styles.propertyCard}>
               <div>
                 <div className={styles.imgContainer}>
-                  <Link href={`/property/${property.id}`}>
+                  <Link href={`/properties/property/${property.id}`}>
                     <img src={property.img} alt={property.name} />
                   </Link>
                   <div className={styles.iconCard}>

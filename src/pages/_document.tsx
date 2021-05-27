@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
           />
           <link
             rel="shortcut icon"
-            href="seazone-icon-small.png"
+            href="/seazone-icon-small.png"
             type="image/png"
           />
         </Head>
