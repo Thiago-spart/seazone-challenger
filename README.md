@@ -1,10 +1,9 @@
-# Podcaster
+# Seazone challenger
 
 <p align="center">
   <a href="#-tecnologias">Techs</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licence">licence</a>
 </p>
 
 <p align="center">
@@ -16,39 +15,45 @@
 <br>
 
 <p align="center">
-  <img alt="Podcaster" src="./public/podcastr-exemple.png" width="100%">
+  <img 
+    alt="Seazone properties page" 
+    src="./public/seazone-exemple01.png" 
+    width="100%"
+  >
+</p>
+
+<p align="center">
+  <img 
+    alt="Seazone property page" 
+    src="./public/seazone-exemple02.png" 
+    width="100%"
+  >
 </p>
 
 ## 🚀 Techs
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-- [X] TypeScript
-- [X] ReactJS
-- [X] [Next.js](https://nextjs.org/docs)
+This project were build by these technologies:
+
+- [x] TypeScript
+- [x] ReactJS
+- [x] [Next.js](https://nextjs.org/docs)
 
 ### Dependencies
-- [X] Yarn
-- [X] Axios
-- [X] JSON-Server
-- [X] SASS
-- [X] Date-Fsn
-- [X] Rc-slider
+
+- [x] Yarn
+- [x] Axios
+- [x] JSON-Server
+- [x] SASS
 
 ### Features
 
-- [X] SSG
-- [X] Fake API
-- [X] Perfomatic
-- [X] Clean Code
-
+- [x] Fake API
+- [x] Perfomatic
 - [ ] Response
-- [ ] Dark theme or Omini theme
-- [ ] PWA 
-- [ ] electron.js 
 
 ## 💻 Project
 
-Podcaster is an aplication made on the nlw5(Next Level Week), focusing on Next.js, and react exencials.  
+This challenge were made more to show my skills as a programmer.
 
 ### Requirements
 
@@ -57,7 +62,11 @@ Podcaster is an aplication made on the nlw5(Next Level Week), focusing on Next.j
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/Thiago-spart/Podcaster.git && cd Podcastr
+$ git clone https://github.com/Thiago-spart/seazone-challenger.git
+```
+
+```bash
+$ cd seazone-challenger
 ```
 
 **Follow the steps below**
@@ -72,10 +81,6 @@ $ yarn server
 # Run the web server
 $ yarn dev
 ```
-
-## 🔖 Layout
-
-You can see the project's layout on [this link](https://www.figma.com/file/IhYMqaVMC4Hg2FT3MZth52/Podcastr-(Copy)?node-id=160%3A2761). It's necessary have an account on [Figma](https://figma.com) to see it.
 
 ## :memo: License
 
