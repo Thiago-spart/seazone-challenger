@@ -14,6 +14,8 @@
 
 <br>
 
+Properties page
+
 <p align="center">
   <img 
     alt="Seazone properties page" 
@@ -21,6 +23,8 @@
     width="100%"
   >
 </p>
+
+Property page
 
 <p align="center">
   <img 
