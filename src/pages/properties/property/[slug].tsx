@@ -3,6 +3,7 @@ import Link from "next/link";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { api } from "../../../services/api";
 import { validatePermission } from "../../../utils/validatePermission";
+import { formatValues } from "../../../utils/formatValues";
 
 import { RiArrowRightSLine } from "react-icons/ri";
 import { BsFillCircleFill } from "react-icons/bs";
@@ -161,14 +162,14 @@ export default function Property({ property }: HomeProps) {
                 <span className={styles.icon}>
                   <AiOutlineClear />
                 </span>
-                <span>R${property.cleaningTax}</span>
+                <span>{formatValues(property.cleaningTax)}</span>
               </div>
               <div>
                 <p>Caução</p>
                 <span className={styles.icon}>
                   <GiReceiveMoney />
                 </span>
-                <span>R${property.guarantee}</span>
+                <span>{formatValues(property.guarantee)}</span>
               </div>
             </div>
             <div className={styles.bedDetails}>

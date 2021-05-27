@@ -6,6 +6,7 @@ import { api } from "../../services/api";
 import { TiArrowSortedDown, TiHome, TiMap } from "react-icons/ti";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { convertPrice } from "../../utils/convertPrice";
+import { formatValues } from "../../utils/formatValues";
 
 import styles from "./home.module.scss";
 
@@ -80,26 +81,26 @@ export default function Home({ properties }: HomeProps) {
                 <div className={styles.cardBody}>
                   <div className={styles.price}>
                     <span>Valor diária</span>
-                    <span>R${property.daily} / noite</span>
+                    <span>{formatValues(property.daily)} / noite</span>
                   </div>
                   <div className={styles.price}>
                     <span>Total 5 diárias</span>
-                    <span>R${prices.dairyFiveDays}</span>
+                    <span>{formatValues(prices.dairyFiveDays)}</span>
                   </div>
                   <div className={styles.price}>
                     <span>Taxa de limpeza</span>
-                    <span>R${property.cleaningTax}</span>
+                    <span>{formatValues(property.cleaningTax)}</span>
                   </div>
                   <div className={styles.price}>
                     <span>Caução</span>
-                    <span>R${property.guarantee}</span>
+                    <span>{formatValues(property.guarantee)}</span>
                   </div>
                   <div className={styles.totalPrice}>
                     <span>Total:</span>
                     <div>
-                      <span>R${prices.total} |</span>
+                      <span>{formatValues(prices.total)} |</span>
                       <div>
-                        <span>R${prices.discount}</span>
+                        <span>{formatValues(prices.discount)}</span>
                         <p>à vista</p>
                       </div>
                     </div>
