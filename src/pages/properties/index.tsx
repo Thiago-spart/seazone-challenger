@@ -5,6 +5,7 @@ import Link from "next/link";
 import { api } from "../../services/api";
 import { TiArrowSortedDown, TiHome, TiMap } from "react-icons/ti";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { convertPrice } from "../../utils/convertPrice";
 
 import styles from "./home.module.scss";
 
@@ -47,6 +48,7 @@ export default function Home({ properties }: HomeProps) {
 
       <section className={styles.cardContainer}>
         {propertyList.map(property => {
+          const prices = convertPrice(property.daily, property.cleaningTax);
           return (
             <div key={property.id} className={styles.propertyCard}>
               <div>
@@ -82,7 +84,7 @@ export default function Home({ properties }: HomeProps) {
                   </div>
                   <div className={styles.price}>
                     <span>Total 5 diárias</span>
-                    <span>R${property.daily * 5}</span>
+                    <span>R${prices.dairyFiveDays}</span>
                   </div>
                   <div className={styles.price}>
                     <span>Taxa de limpeza</span>
@@ -95,13 +97,9 @@ export default function Home({ properties }: HomeProps) {
                   <div className={styles.totalPrice}>
                     <span>Total:</span>
                     <div>
-                      <span>
-                        R${5 * property.daily + property.cleaningTax} |
-                      </span>
+                      <span>R${prices.total} |</span>
                       <div>
-                        <span>
-                          R${5 * property.daily + property.cleaningTax}
-                        </span>
+                        <span>R${prices.discount}</span>
                         <p>à vista</p>
                       </div>
                     </div>
