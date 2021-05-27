@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "id": 1,
+      "id": "1",
       "name": "JBM202 Suite Top vista mar resort",
       "description": {
         "room": 2,
@@ -45,7 +45,7 @@
       "img": "casa01.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "JBM242 Suite Top vista mar resort",
       "description": {
         "room": 2,
@@ -89,7 +89,7 @@
       "img": "casa02.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "JBM222 Suite Top vista mar resort",
       "description": {
         "room": 2,
@@ -133,7 +133,7 @@
       "img": "casa03.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "JBM74 Suite Top vista mar resort",
       "description": {
         "room": 2,
@@ -177,7 +177,7 @@
       "img": "casa04.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "JBM55 Suite Top vista mar resort",
       "description": {
         "room": 2,
@@ -221,7 +221,7 @@
       "img": "casa05.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "JBM277 Suite Top vista mar resort",
       "description": {
         "room": 2,
