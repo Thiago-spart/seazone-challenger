@@ -91,7 +91,6 @@
 
         span {
           margin-left: auto;
-          text-transform: capitalize;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -112,7 +111,6 @@
           span {
             &:last-child {
               margin-left: auto;
-              text-transform: capitalize;
             }
           }
         }
@@ -128,7 +126,6 @@
 
           div {
             margin-left: auto;
-            text-transform: capitalize;
             display: flex;
 
             span {
