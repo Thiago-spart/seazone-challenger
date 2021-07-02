@@ -1,15 +1,18 @@
+import Link from "next/link";
+
 import { FaUserAlt } from "react-icons/fa";
 import { TiArrowSortedDown } from "react-icons/ti";
-import { Filter } from "./components/Filter";
-import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
-export function Header() {
+export const Header = () => {
   return (
-    <header>
-      <div className={styles.headerContainer}>
-        <img src="/logo-header.png" alt="seazone logo" />
+    <header className={styles.container}>
+      <div className={styles.logo}>
+        Store<span>K</span>
+      </div>
+
+      <nav>
         <Link href={"/calendar/"}>
           <a type="button">Calendário</a>
         </Link>
@@ -25,19 +28,15 @@ export function Header() {
         <Link href={"/control/"}>
           <a type="button">Controle</a>
         </Link>
-
-        <div>
+        <button type="button" className={styles.userOptions}>
           <div>
             <FaUserAlt />
           </div>
           <div>
             <TiArrowSortedDown />
           </div>
-        </div>
-      </div>
-      <>
-        <Filter />
-      </>
+        </button>
+      </nav>
     </header>
   );
-}
+};
