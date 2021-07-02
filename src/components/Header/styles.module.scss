@@ -1,70 +1,82 @@
-.headerContainer {
+.container {
   background: var(--primary-500);
   color: var(--gray-50);
   height: 4rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
 
-  img {
-    width: 8rem;
-  }
-
-  a {
-    border: none;
-    padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    color: var(--gray-50);
-    transition: all 0.8s;
-    border-bottom: 3px solid var(--primary-500);
-  }
-
-  a:hover {
-    background: var(--primary-200);
-    border-bottom: 3px solid var(--secondary-800);
-  }
-
-  div {
+  .logo {
     display: flex;
-    margin-left: auto;
-    text-transform: capitalize;
-    color: var(--gray-500);
-    text-align: center;
     align-items: center;
+    border-bottom: 1px solid white;
+    height: 2rem;
+    cursor: pointer;
+    transition: filter 0.2s;
 
-    &:first-child {
-      background: var(--white);
-      border: 1px solid var(--gray-200);
-      border-radius: 50%;
-      padding: 0.5rem 0.5rem;
-      float: left;
-    }
-
-    &:last-child {
-      padding: 0.25rem;
-      float: right;
-    }
-  }
-}
-
-@media (max-width: 720px) {
-  .headerContainer {
-    height: 5rem;
-    padding: 1rem 2rem;
-
-    p {
-      font-size: 1rem;
-      margin-left: 1rem;
-      padding: 0rem 0 0.25rem 2rem;
-      border-left: 1px solid var(--gray-100);
+    &:hover {
+      filter: brightness(0.9);
     }
 
     span {
-      margin-left: auto;
-      font-size: 0.7rem;
+      font-size: 1.5rem;
+      color: var(--secondary-500);
+    }
+  }
+
+  nav {
+    display: flex;
+    float: right;
+    gap: 10px;
+
+    a {
+      border: none;
+      padding: 1rem 2rem;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      color: var(--gray-50);
+      transition: all 0.8s;
+      transition: filter 0.2;
+      gap: 10px;
+
+      & + a {
+        border-left: 2px solid #fff;
+      }
+
+      &:hover {
+        filter: brightness(0.8);
+        color: var(--secondary-500);
+      }
+    }
+
+    .userOptions {
+      color: var(--gray-500);
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      transition: filter 0.2s;
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+
+      &:first-child {
+        background: var(--white);
+        border: 1px solid var(--white);
+        border-radius: 50%;
+        padding: 0.5rem 0.5rem;
+        float: left;
+      }
+
+      &:last-child {
+        padding: 0.25rem;
+        float: right;
+      }
     }
   }
 }
