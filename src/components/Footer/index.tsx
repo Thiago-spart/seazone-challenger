@@ -9,26 +9,29 @@ import { FaCoffee } from "react-icons/fa";
 
 import styles from "./styles.module.scss";
 
-export function Footer() {
+export const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerContainer}>
-        <div className={styles.imgContainer}>
-          <img src="/seazone-footer-image.png" alt="seazone logo" />
+      <div className={styles.container}>
+        <div className={styles.logoContainer}>
+          <span className={styles.logo}>
+            Store<span>K</span>
+          </span>
+          <span>Os melhores preços sempre</span>
         </div>
         <div className={styles.iconContainer}>
-          <div>
+          <a href="www.google.com">
             <TiSocialLinkedin />
-          </div>
-          <div>
+          </a>
+          <a href="www.google.com">
             <TiSocialFacebook />
-          </div>
-          <div>
+          </a>
+          <a href="www.google.com">
             <CgMail />
-          </div>
-          <div>
+          </a>
+          <a href="www.google.com">
             <TiSocialGithub />
-          </div>
+          </a>
         </div>
       </div>
       <div className={styles.copyright}>
@@ -44,4 +47,4 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+};
