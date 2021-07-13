@@ -1,247 +1,36 @@
-.propertyContainer {
+.container {
   background: var(--white);
   color: #131313;
   padding: 1rem 6rem;
   display: flex;
   flex-direction: column;
   font-weight: 500;
+  gap: 2.5rem;
 
-  .navegate {
+  .navigation {
     span {
       margin: auto 0.5rem;
       font-size: 0.95rem;
     }
+
+    a {
+      font-size: 0.95rem;
+      margin: auto 0.5rem;
+      cursor: pointer;
+      transition: filter 0.2s;
+      text-decoration: none;
+      color: var(--primary-800);
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
   }
 
   .gridContainer {
-    margin-top: 2.5rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 4rem;
-
-    .localization {
-      .imgContainer {
-        img {
-          width: 100%;
-          border-radius: 1.5rem;
-          height: 20rem;
-          object-fit: cover;
-        }
-      }
-
-      .localizationDetails {
-        margin-top: 1.5rem;
-        margin-left: 0.3rem;
-
-        h3 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
-        }
-
-        p {
-          font-size: 0.85rem;
-        }
-
-        button {
-          margin-top: 1rem;
-          padding: auto 0.5rem;
-          cursor: pointer;
-          background-color: var(--white);
-          color: var(--secondary-800);
-          font-size: 0.85rem;
-          border: none;
-        }
-      }
-    }
-
-    .details {
-      display: flex;
-      flex-direction: column;
-
-      .titleHeader {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0.5rem;
-
-        h2 {
-          font-size: 1.7rem;
-          margin-bottom: 0.5rem;
-        }
-      }
-
-      .titleBody {
-        font-weight: 600;
-        display: flex;
-        padding-bottom: 0.5rem;
-        border-bottom: 2px solid var(--gray-100);
-
-        .status {
-          margin-left: auto;
-          color: var(--success);
-
-          span {
-            margin-left: 0.5rem;
-          }
-        }
-      }
-
-      .priceContainer {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 3.5rem;
-        padding-top: 1rem;
-
-        div {
-          border: 2px solid var(--gray-100);
-          border-radius: 0.8rem;
-          padding: 1rem 2rem;
-          font-weight: 800;
-          color: var(--gray-500);
-
-          p {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-          }
-
-          span {
-            font-size: 1.55rem;
-          }
-
-          .icon {
-            margin-right: 0.5rem;
-            font-size: 1.8rem;
-          }
-        }
-      }
-
-      .bedDetails {
-        margin-top: 0.5rem;
-
-        h3 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
-          padding-bottom: 0.5rem;
-          border-bottom: 2px solid var(--gray-100);
-        }
-
-        .bedContainer {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-
-          div {
-            span {
-              font-weight: 600;
-              font-size: 1.1rem;
-
-              .miniBall {
-                font-size: 0.4rem;
-              }
-            }
-
-            .quantBed {
-              margin-left: 0.8rem;
-              font-weight: 500;
-            }
-          }
-        }
-      }
-
-      .rules {
-        margin-top: 1rem;
-
-        h3 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
-          padding-bottom: 0.5rem;
-          border-bottom: 2px solid var(--gray-100);
-        }
-
-        .rulesContainer {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-
-          div {
-            display: flex;
-            margin-bottom: 1rem;
-
-            span {
-              font-size: 1rem;
-            }
-
-            button {
-              border: none;
-              margin-left: 0.5rem;
-              border-radius: 0.4rem;
-              padding: 0.1rem 0.4rem;
-              text-transform: lowercase;
-              color: var(--white);
-              cursor: auto;
-            }
-          }
-        }
-
-        .moreRules {
-          background: var(--white);
-          color: var(--secondary-800);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border: none;
-          font-weight: 600;
-        }
-      }
-
-      .amenities {
-        margin-top: 1rem;
-
-        h3 {
-          font-size: 1.4rem;
-          margin-bottom: 1rem;
-          padding-bottom: 0.5rem;
-          border-bottom: 2px solid var(--gray-100);
-        }
-
-        .amenitiesContainer {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-
-          div {
-            display: flex;
-            margin-bottom: 1rem;
-
-            span {
-              font-size: 1rem;
-
-              .miniBall {
-                font-size: 0.4rem;
-              }
-            }
-
-            button {
-              border: none;
-              margin-left: 0.5rem;
-              border-radius: 0.4rem;
-              padding: 0.1rem 0.4rem;
-              text-transform: lowercase;
-              color: var(--white);
-              cursor: auto;
-            }
-          }
-        }
-      }
-
-      .allow {
-        background: var(--success);
-      }
-
-      .deny {
-        background: var(--secondary-800);
-      }
-
-      .miniBall {
-        color: var(--gray-500);
-        margin-right: 0.8rem;
-      }
-    }
+    gap: 1.5rem;
   }
 }

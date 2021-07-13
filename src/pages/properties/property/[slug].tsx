@@ -1,7 +1,11 @@
+import { PropertyContext } from "../../../hook/useProperty";
 import Head from "next/head";
 import Link from "next/link";
 import { GetStaticProps, GetStaticPaths } from "next";
+
 import { api } from "../../../services/api";
+import { PropertyLocalization } from "../../../components/PropertyLocalization";
+
 import { validatePermission } from "../../../utils/validatePermission";
 import { formatValues } from "../../../utils/formatValues";
 
@@ -13,10 +17,11 @@ import { HiOutlineUserGroup } from "react-icons/hi";
 import { TiArrowSortedDown } from "react-icons/ti";
 
 import styles from "./property.module.scss";
+import { PropertyDetails } from "../../../components/PropertyDetails";
 
 interface Property {
   id: string;
-  name: String;
+  name: string;
   room: number;
   bedroom: number;
   bathroom: number;
@@ -101,325 +106,31 @@ interface HomeProps {
 
 export default function Property({ property }: HomeProps) {
   return (
-    <div>
-      <Head>
-        <title>{property.name} | Seazone</title>
-      </Head>
-      <div className={styles.propertyContainer}>
-        <div className={styles.navegate}>
-          <Link href={"/properties/"}>
-            <span>imóveis</span>
-          </Link>
-          <RiArrowRightSLine />
-          <span>{property.street}</span>
-        </div>
+    <PropertyContext.Provider value={property}>
+      <div>
+        <Head>
+          <title>{property.name} | Seazone</title>
+        </Head>
+        <div className={styles.container}>
+          <header className={styles.navigation}>
+            <Link href={"/properties/"}>
+              <a>imóveis</a>
+            </Link>
+            <RiArrowRightSLine />
+            <span>{property.street}</span>
+          </header>
 
-        <div className={styles.gridContainer}>
-          <div className={styles.localization}>
-            <div className={styles.imgContainer}>
-              <img src={"/" + property.img} /*alt={property.name}*/ />
+          <div className={styles.gridContainer}>
+            <div>
+              <PropertyLocalization />
             </div>
-
-            <div className={styles.localizationDetails}>
-              <h3>Localização</h3>
-              <p>
-                {property.district} {property.number}, {property.street},{" "}
-                {property.city} - {property.state}
-              </p>
-              <p>CEP {property.cep}</p>
-              <Link href={property.geolocalization}>
-                <button type="button">Ver localização</button>
-              </Link>
-            </div>
-          </div>
-          <div className={styles.details}>
-            <div className={styles.titleHeader}>
-              <h2>{property.name}</h2>
-              <p>
-                {property.street}, {property.city}
-              </p>
-            </div>
-            <div className={styles.titleBody}>
-              <span>
-                {property.room} quartos . {property.bedroom} camas .{" "}
-                {property.bathroom} banheiros
-              </span>
-              <div className={styles.status}>
-                <BsFillCircleFill />
-                <span>ativo</span>
-              </div>
-            </div>
-            <div className={styles.priceContainer}>
-              <div>
-                <p>Máx. de hóspedes</p>
-                <span className={styles.icon}>
-                  <HiOutlineUserGroup />
-                </span>
-                <span>{property.maxHosts}</span>
-              </div>
-              <div>
-                <p>Taxa de limpeza</p>
-                <span className={styles.icon}>
-                  <AiOutlineClear />
-                </span>
-                <span>{formatValues(property.cleaningTax)}</span>
-              </div>
-              <div>
-                <p>Caução</p>
-                <span className={styles.icon}>
-                  <GiReceiveMoney />
-                </span>
-                <span>{formatValues(property.guarantee)}</span>
-              </div>
-            </div>
-            <div className={styles.bedDetails}>
-              <h3>Camas</h3>
-              <div className={styles.bedContainer}>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    1 cama de casal:
-                  </span>
-                  <span className={styles.quantBed}>duplo</span>
-                </div>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    1 sofá/cama:
-                  </span>
-                  <span className={styles.quantBed}>sala/área comum</span>
-                </div>
-              </div>
-            </div>
-            <div className={styles.rules}>
-              <h3>Regras</h3>
-              <div className={styles.rulesContainer}>
-                <div>
-                  <span>Aceita Crianças (de 02 até 12 anos)</span>
-                  <button
-                    type="button"
-                    className={
-                      property.child.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.child.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>Aceita Bebês (abaixo de 02)</span>
-                  <button
-                    type="button"
-                    className={
-                      property.baby.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.baby.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>Fornece Berços</span>
-                  <button
-                    type="button"
-                    className={
-                      property.crib.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.crib.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>Restrição de idade para fazer reserva</span>
-                  <button
-                    type="button"
-                    className={
-                      property.ageRestrictions.ruleClass
-                        ? styles.allow
-                        : styles.deny
-                    }
-                  >
-                    {property.ageRestrictions.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>Permite fumar no quarto</span>
-                  <button
-                    type="button"
-                    className={
-                      property.allowSmokingRoom.ruleClass
-                        ? styles.allow
-                        : styles.deny
-                    }
-                  >
-                    {property.allowSmokingRoom.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>Aceita animais de estimção</span>
-                  <button
-                    type="button"
-                    className={
-                      property.pets.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.pets.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>Eventos são permitidos</span>
-                  <button type="button" className={styles.allow}>
-                    Sim
-                  </button>
-                </div>
-              </div>
-              <button type="button" className={styles.moreRules}>
-                Mais regras <TiArrowSortedDown />
-              </button>
-            </div>
-            <div className={styles.amenities}>
-              <h3>Comodidades</h3>
-              <div className={styles.amenitiesContainer}>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    Estacionamento
-                  </span>
-                  <button
-                    type="button"
-                    className={
-                      property.parking.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.parking.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    Elevador
-                  </span>
-                  <button
-                    type="button"
-                    className={
-                      property.elevator.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.elevator.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    Porteiro
-                  </span>
-                  <button
-                    type="button"
-                    className={
-                      property.doorman.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.doorman.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    Piscina Privada
-                  </span>
-                  <button
-                    type="button"
-                    className={
-                      property.privatePool.ruleClass
-                        ? styles.allow
-                        : styles.deny
-                    }
-                  >
-                    {property.privatePool.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    Internet
-                  </span>
-                  <button
-                    type="button"
-                    className={
-                      property.internet.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.internet.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    Wi-fi
-                  </span>
-                  <button
-                    type="button"
-                    className={
-                      property.wifi.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.wifi.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    Ar-condicionado
-                  </span>
-                  <button
-                    type="button"
-                    className={
-                      property.airConditioner.ruleClass
-                        ? styles.allow
-                        : styles.deny
-                    }
-                  >
-                    {property.airConditioner.permission}
-                  </button>
-                </div>
-                <div>
-                  <span>
-                    <span className={styles.miniBall}>
-                      <BsFillCircleFill />
-                    </span>{" "}
-                    TV
-                  </span>
-                  <button
-                    type="button"
-                    className={
-                      property.tv.ruleClass ? styles.allow : styles.deny
-                    }
-                  >
-                    {property.tv.permission}
-                  </button>
-                </div>
-              </div>
+            <div className={styles.details}>
+              <PropertyDetails />
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </PropertyContext.Provider>
   );
 }
 

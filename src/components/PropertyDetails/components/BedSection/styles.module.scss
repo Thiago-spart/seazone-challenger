@@ -1,0 +1,31 @@
+.bedDetails {
+  margin-top: 0.5rem;
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--gray-100);
+  }
+
+  .bedContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    div {
+      span {
+        font-weight: 600;
+        font-size: 1.1rem;
+
+        .miniBall {
+          font-size: 0.4rem;
+        }
+      }
+
+      .quantBed {
+        margin-left: 0.8rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
