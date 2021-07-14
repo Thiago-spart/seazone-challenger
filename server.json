@@ -1,268 +1,538 @@
 {
-  "properties": [
-    {
-      "id": "1",
-      "name": "JBM202 Suite Top vista mar resort",
-      "description": {
-        "room": 2,
-        "bedroom": 3,
-        "bathroom": 2
-      },
-      "status": true,
-      "maxHosts": 6,
-      "minHosts": 1,
-      "cleaningTax": 50,
-      "guarantee": 600,
-      "daily": 700,
-      "address": {
-        "city": "Florianópolis",
-        "state": "SC",
-        "street": "Jurerê internacional",
-        "district": "AV. Búzios",
-        "number": "1800",
-        "cep": "89650-100",
-        "geolocalization": "https://www.google.com.br/maps"
-      },
-      "rules": {
-        "child": true,
-        "baby": true,
-        "crib": false,
-        "ageRestrictions": false,
-        "allowSmokingRoom": false,
-        "pets": false,
-        "event": true
-      },
-      "amenities": {
-        "parking": false,
-        "elevator": true,
-        "doorman": true,
-        "privatePool": false,
-        "internet": true,
-        "wifi": true,
-        "airConditioner": false,
-        "tv": true
-      },
-      "img": "casa01.jpg"
-    },
-    {
-      "id": "2",
-      "name": "JBM242 Suite Top vista mar resort",
-      "description": {
-        "room": 2,
-        "bedroom": 3,
-        "bathroom": 2
-      },
-      "status": true,
-      "maxHosts": 6,
-      "minHosts": 1,
-      "cleaningTax": 50,
-      "guarantee": 600,
-      "daily": 700,
-      "address": {
-        "city": "Florianópolis",
-        "state": "SC",
-        "street": "Jurerê internacional",
-        "district": "AV. Búzios",
-        "number": "1800",
-        "cep": "89650-100",
-        "geolocalization": "https://www.google.com.br/maps"
-      },
-      "rules": {
-        "child": true,
-        "baby": true,
-        "crib": false,
-        "ageRestrictions": false,
-        "allowSmokingRoom": false,
-        "pets": false,
-        "event": true
-      },
-      "amenities": {
-        "parking": false,
-        "elevator": true,
-        "doorman": true,
-        "privatePool": false,
-        "internet": true,
-        "wifi": true,
-        "airConditioner": false,
-        "tv": true
-      },
-      "img": "casa02.jpg"
-    },
-    {
-      "id": "3",
-      "name": "JBM222 Suite Top vista mar resort",
-      "description": {
-        "room": 2,
-        "bedroom": 3,
-        "bathroom": 2
-      },
-      "status": true,
-      "maxHosts": 6,
-      "minHosts": 1,
-      "cleaningTax": 50,
-      "guarantee": 600,
-      "daily": 700,
-      "address": {
-        "city": "Florianópolis",
-        "state": "SC",
-        "street": "Jurerê internacional",
-        "district": "AV. Búzios",
-        "number": "1800",
-        "cep": "89650-100",
-        "geolocalization": "https://www.google.com.br/maps"
-      },
-      "rules": {
-        "child": true,
-        "baby": true,
-        "crib": false,
-        "ageRestrictions": false,
-        "allowSmokingRoom": false,
-        "pets": false,
-        "event": true
-      },
-      "amenities": {
-        "parking": false,
-        "elevator": true,
-        "doorman": true,
-        "privatePool": false,
-        "internet": true,
-        "wifi": true,
-        "airConditioner": false,
-        "tv": true
-      },
-      "img": "casa03.jpg"
-    },
-    {
-      "id": "4",
-      "name": "JBM74 Suite Top vista mar resort",
-      "description": {
-        "room": 2,
-        "bedroom": 3,
-        "bathroom": 2
-      },
-      "status": true,
-      "maxHosts": 6,
-      "minHosts": 1,
-      "cleaningTax": 50,
-      "guarantee": 600,
-      "daily": 700,
-      "address": {
-        "city": "Florianópolis",
-        "state": "SC",
-        "street": "Jurerê internacional",
-        "district": "AV. Búzios",
-        "number": "1800",
-        "cep": "89650-100",
-        "geolocalization": "https://www.google.com.br/maps"
-      },
-      "rules": {
-        "child": true,
-        "baby": true,
-        "crib": false,
-        "ageRestrictions": false,
-        "allowSmokingRoom": false,
-        "pets": false,
-        "event": true
-      },
-      "amenities": {
-        "parking": false,
-        "elevator": true,
-        "doorman": true,
-        "privatePool": false,
-        "internet": true,
-        "wifi": true,
-        "airConditioner": false,
-        "tv": true
-      },
-      "img": "casa04.jpg"
-    },
-    {
-      "id": "5",
-      "name": "JBM55 Suite Top vista mar resort",
-      "description": {
-        "room": 2,
-        "bedroom": 3,
-        "bathroom": 2
-      },
-      "status": true,
-      "maxHosts": 6,
-      "minHosts": 1,
-      "cleaningTax": 50,
-      "guarantee": 600,
-      "daily": 700,
-      "address": {
-        "city": "Florianópolis",
-        "state": "SC",
-        "street": "Jurerê internacional",
-        "district": "AV. Búzios",
-        "number": "1800",
-        "cep": "89650-100",
-        "geolocalization": "https://www.google.com.br/maps"
-      },
-      "rules": {
-        "child": true,
-        "baby": true,
-        "crib": false,
-        "ageRestrictions": false,
-        "allowSmokingRoom": false,
-        "pets": false,
-        "event": true
-      },
-      "amenities": {
-        "parking": false,
-        "elevator": true,
-        "doorman": true,
-        "privatePool": false,
-        "internet": true,
-        "wifi": true,
-        "airConditioner": false,
-        "tv": true
-      },
-      "img": "casa05.jpg"
-    },
-    {
-      "id": "6",
-      "name": "JBM277 Suite Top vista mar resort",
-      "description": {
-        "room": 2,
-        "bedroom": 3,
-        "bathroom": 2
-      },
-      "status": true,
-      "maxHosts": 6,
-      "minHosts": 1,
-      "cleaningTax": 50,
-      "guarantee": 600,
-      "daily": 700,
-      "address": {
-        "city": "Florianópolis",
-        "state": "SC",
-        "street": "Jurerê internacional",
-        "district": "AV. Búzios",
-        "number": "1800",
-        "cep": "89650-100",
-        "geolocalization": "https://www.google.com.br/maps"
-      },
-      "rules": {
-        "child": true,
-        "baby": true,
-        "crib": false,
-        "ageRestrictions": false,
-        "allowSmokingRoom": false,
-        "pets": false,
-        "event": true
-      },
-      "amenities": {
-        "parking": false,
-        "elevator": true,
-        "doorman": true,
-        "privatePool": false,
-        "internet": true,
-        "wifi": true,
-        "airConditioner": false,
-        "tv": true
-      },
-      "img": "casa06.jpg"
-    }
-  ]
+	"properties": [
+		{
+			"id": "1",
+			"name": "JBM202 Suite Top vista mar resort",
+			"description": {
+				"room": 2,
+				"bedroom": 3,
+				"bathroom": 2
+			},
+			"status": true,
+			"maxHosts": 6,
+			"minHosts": 1,
+			"cleaningTax": 50,
+			"guarantee": 600,
+			"daily": 700,
+			"address": {
+				"city": "Florianópolis",
+				"state": "SC",
+				"street": "Jurerê internacional",
+				"district": "AV. Búzios",
+				"number": "1800",
+				"cep": "89650-100",
+				"geolocalization": "https://www.google.com.br/maps"
+			},
+			"rules": [
+				{
+					"name": "child",
+					"isAllow": true
+				},
+				{
+					"name": "baby",
+					"isAllow": true
+				},
+				{
+					"name": "crib",
+					"isAllow": false
+				},
+				{
+					"name": "ageRestrictions",
+					"isAllow": false
+				},
+				{
+					"name": "allowSmokingRoom",
+					"isAllow": false
+				},
+				{
+					"name": "pets",
+					"isAllow": false
+				},
+				{
+					"name": "event",
+					"isAllow": true
+				}
+			],
+			"amenities": [
+				{
+					"name": "parking",
+					"isAllow": false
+				},
+				{
+					"name": "elevator",
+					"isAllow": true
+				},
+				{
+					"name": "doorman",
+					"isAllow": true
+				},
+				{
+					"name": "privatePool",
+					"isAllow": false
+				},
+				{
+					"name": "internet",
+					"isAllow": true
+				},
+				{
+					"name": "wifi",
+					"isAllow": true
+				},
+				{
+					"name": "airConditioner",
+					"isAllow": false
+				},
+				{
+					"name": "tv",
+					"isAllow": true
+				}
+			],
+			"img": "casa01.jpg"
+		},
+		{
+			"id": "2",
+			"name": "JBM242 Suite Top vista mar resort",
+			"description": {
+				"room": 2,
+				"bedroom": 3,
+				"bathroom": 2
+			},
+			"status": true,
+			"maxHosts": 6,
+			"minHosts": 1,
+			"cleaningTax": 50,
+			"guarantee": 600,
+			"daily": 700,
+			"address": {
+				"city": "Florianópolis",
+				"state": "SC",
+				"street": "Jurerê internacional",
+				"district": "AV. Búzios",
+				"number": "1800",
+				"cep": "89650-100",
+				"geolocalization": "https://www.google.com.br/maps"
+			},
+			"rules": [
+				{
+					"name": "child",
+					"isAllow": true
+				},
+				{
+					"name": "baby",
+					"isAllow": true
+				},
+				{
+					"name": "crib",
+					"isAllow": false
+				},
+				{
+					"name": "ageRestrictions",
+					"isAllow": false
+				},
+				{
+					"name": "allowSmokingRoom",
+					"isAllow": false
+				},
+				{
+					"name": "pets",
+					"isAllow": false
+				},
+				{
+					"name": "event",
+					"isAllow": true
+				}
+			],
+			"amenities": [
+				{
+					"name": "parking",
+					"isAllow": false
+				},
+				{
+					"name": "elevator",
+					"isAllow": true
+				},
+				{
+					"name": "doorman",
+					"isAllow": true
+				},
+				{
+					"name": "privatePool",
+					"isAllow": false
+				},
+				{
+					"name": "internet",
+					"isAllow": true
+				},
+				{
+					"name": "wifi",
+					"isAllow": true
+				},
+				{
+					"name": "airConditioner",
+					"isAllow": false
+				},
+				{
+					"name": "tv",
+					"isAllow": true
+				}
+			],
+			"img": "casa02.jpg"
+		},
+		{
+			"id": "3",
+			"name": "JBM222 Suite Top vista mar resort",
+			"description": {
+				"room": 2,
+				"bedroom": 3,
+				"bathroom": 2
+			},
+			"status": true,
+			"maxHosts": 6,
+			"minHosts": 1,
+			"cleaningTax": 50,
+			"guarantee": 600,
+			"daily": 700,
+			"address": {
+				"city": "Florianópolis",
+				"state": "SC",
+				"street": "Jurerê internacional",
+				"district": "AV. Búzios",
+				"number": "1800",
+				"cep": "89650-100",
+				"geolocalization": "https://www.google.com.br/maps"
+			},
+			"rules": [
+				{
+					"name": "child",
+					"isAllow": true
+				},
+				{
+					"name": "baby",
+					"isAllow": true
+				},
+				{
+					"name": "crib",
+					"isAllow": false
+				},
+				{
+					"name": "ageRestrictions",
+					"isAllow": false
+				},
+				{
+					"name": "allowSmokingRoom",
+					"isAllow": false
+				},
+				{
+					"name": "pets",
+					"isAllow": false
+				},
+				{
+					"name": "event",
+					"isAllow": true
+				}
+			],
+			"amenities": [
+				{
+					"name": "parking",
+					"isAllow": false
+				},
+				{
+					"name": "elevator",
+					"isAllow": true
+				},
+				{
+					"name": "doorman",
+					"isAllow": true
+				},
+				{
+					"name": "privatePool",
+					"isAllow": false
+				},
+				{
+					"name": "internet",
+					"isAllow": true
+				},
+				{
+					"name": "wifi",
+					"isAllow": true
+				},
+				{
+					"name": "airConditioner",
+					"isAllow": false
+				},
+				{
+					"name": "tv",
+					"isAllow": true
+				}
+			],
+			"img": "casa03.jpg"
+		},
+		{
+			"id": "4",
+			"name": "JBM74 Suite Top vista mar resort",
+			"description": {
+				"room": 2,
+				"bedroom": 3,
+				"bathroom": 2
+			},
+			"status": true,
+			"maxHosts": 6,
+			"minHosts": 1,
+			"cleaningTax": 50,
+			"guarantee": 600,
+			"daily": 700,
+			"address": {
+				"city": "Florianópolis",
+				"state": "SC",
+				"street": "Jurerê internacional",
+				"district": "AV. Búzios",
+				"number": "1800",
+				"cep": "89650-100",
+				"geolocalization": "https://www.google.com.br/maps"
+			},
+			"rules": [
+				{
+					"name": "child",
+					"isAllow": true
+				},
+				{
+					"name": "baby",
+					"isAllow": true
+				},
+				{
+					"name": "crib",
+					"isAllow": false
+				},
+				{
+					"name": "ageRestrictions",
+					"isAllow": false
+				},
+				{
+					"name": "allowSmokingRoom",
+					"isAllow": false
+				},
+				{
+					"name": "pets",
+					"isAllow": false
+				},
+				{
+					"name": "event",
+					"isAllow": true
+				}
+			],
+			"amenities": [
+				{
+					"name": "parking",
+					"isAllow": false
+				},
+				{
+					"name": "elevator",
+					"isAllow": true
+				},
+				{
+					"name": "doorman",
+					"isAllow": true
+				},
+				{
+					"name": "privatePool",
+					"isAllow": false
+				},
+				{
+					"name": "internet",
+					"isAllow": true
+				},
+				{
+					"name": "wifi",
+					"isAllow": true
+				},
+				{
+					"name": "airConditioner",
+					"isAllow": false
+				},
+				{
+					"name": "tv",
+					"isAllow": true
+				}
+			],
+			"img": "casa04.jpg"
+		},
+		{
+			"id": "5",
+			"name": "JBM55 Suite Top vista mar resort",
+			"description": {
+				"room": 2,
+				"bedroom": 3,
+				"bathroom": 2
+			},
+			"status": true,
+			"maxHosts": 6,
+			"minHosts": 1,
+			"cleaningTax": 50,
+			"guarantee": 600,
+			"daily": 700,
+			"address": {
+				"city": "Florianópolis",
+				"state": "SC",
+				"street": "Jurerê internacional",
+				"district": "AV. Búzios",
+				"number": "1800",
+				"cep": "89650-100",
+				"geolocalization": "https://www.google.com.br/maps"
+			},
+			"rules": [
+				{
+					"name": "child",
+					"isAllow": true
+				},
+				{
+					"name": "baby",
+					"isAllow": true
+				},
+				{
+					"name": "crib",
+					"isAllow": false
+				},
+				{
+					"name": "ageRestrictions",
+					"isAllow": false
+				},
+				{
+					"name": "allowSmokingRoom",
+					"isAllow": false
+				},
+				{
+					"name": "pets",
+					"isAllow": false
+				},
+				{
+					"name": "event",
+					"isAllow": true
+				}
+			],
+			"amenities": [
+				{
+					"name": "parking",
+					"isAllow": false
+				},
+				{
+					"name": "elevator",
+					"isAllow": true
+				},
+				{
+					"name": "doorman",
+					"isAllow": true
+				},
+				{
+					"name": "privatePool",
+					"isAllow": false
+				},
+				{
+					"name": "internet",
+					"isAllow": true
+				},
+				{
+					"name": "wifi",
+					"isAllow": true
+				},
+				{
+					"name": "airConditioner",
+					"isAllow": false
+				},
+				{
+					"name": "tv",
+					"isAllow": true
+				}
+			],
+			"img": "casa05.jpg"
+		},
+		{
+			"id": "6",
+			"name": "JBM277 Suite Top vista mar resort",
+			"description": {
+				"room": 2,
+				"bedroom": 3,
+				"bathroom": 2
+			},
+			"status": true,
+			"maxHosts": 6,
+			"minHosts": 1,
+			"cleaningTax": 50,
+			"guarantee": 600,
+			"daily": 700,
+			"address": {
+				"city": "Florianópolis",
+				"state": "SC",
+				"street": "Jurerê internacional",
+				"district": "AV. Búzios",
+				"number": "1800",
+				"cep": "89650-100",
+				"geolocalization": "https://www.google.com.br/maps"
+			},
+			"rules": [
+				{
+					"name": "child",
+					"isAllow": true
+				},
+				{
+					"name": "baby",
+					"isAllow": true
+				},
+				{
+					"name": "crib",
+					"isAllow": false
+				},
+				{
+					"name": "ageRestrictions",
+					"isAllow": false
+				},
+				{
+					"name": "allowSmokingRoom",
+					"isAllow": false
+				},
+				{
+					"name": "pets",
+					"isAllow": false
+				},
+				{
+					"name": "event",
+					"isAllow": true
+				}
+			],
+			"amenities": [
+				{
+					"name": "parking",
+					"isAllow": false
+				},
+				{
+					"name": "elevator",
+					"isAllow": true
+				},
+				{
+					"name": "doorman",
+					"isAllow": true
+				},
+				{
+					"name": "privatePool",
+					"isAllow": false
+				},
+				{
+					"name": "internet",
+					"isAllow": true
+				},
+				{
+					"name": "wifi",
+					"isAllow": true
+				},
+				{
+					"name": "airConditioner",
+					"isAllow": false
+				},
+				{
+					"name": "tv",
+					"isAllow": true
+				}
+			],
+			"img": "casa06.jpg"
+		}
+	]
 }
