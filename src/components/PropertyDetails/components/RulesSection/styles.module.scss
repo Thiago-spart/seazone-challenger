@@ -1,57 +1,57 @@
 .rules {
-  margin-top: 1rem;
+	margin-top: 1rem;
 
-  h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--gray-100);
-  }
+	h3 {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+		padding-bottom: 0.5rem;
+		border-bottom: 2px solid var(--gray-100);
+	}
 
-  .rulesContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+	.rulesContainer {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 
-    div {
-      display: flex;
-      margin-bottom: 1rem;
+		div {
+			display: flex;
+			margin-bottom: 1rem;
 
-      span {
-        font-size: 1rem;
-      }
+			span {
+				font-size: 1rem;
+			}
 
-      button {
-        border: none;
-        margin-left: 0.5rem;
-        border-radius: 0.4rem;
-        padding: 0.1rem 0.4rem;
-        text-transform: lowercase;
-        color: var(--white);
-        cursor: auto;
-      }
-    }
-  }
+			button {
+				border: none;
+				margin-left: 0.5rem;
+				border-radius: 0.4rem;
+				padding: 0.1rem 0.4rem;
+				text-transform: lowercase;
+				color: var(--white);
+				cursor: auto;
+			}
+		}
+	}
 
-  .moreRules {
-    background: var(--white);
-    color: var(--secondary-800);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    font-weight: 600;
-  }
+	.moreRules {
+		background: var(--white);
+		color: var(--secondary-800);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		font-weight: 600;
+	}
 }
 
 .allow {
-  background: var(--success);
+	background: var(--success);
 }
 
 .deny {
-  background: var(--secondary-800);
+	background: var(--danger);
 }
 
 .miniBall {
-  color: var(--gray-500);
-  margin-right: 0.8rem;
+	color: var(--gray-500);
+	margin-right: 0.8rem;
 }
